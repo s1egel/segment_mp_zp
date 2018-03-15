@@ -1,5 +1,6 @@
-connection: "bigquery"
+connection: "big_query_push"
 
+#comments here
 # include all views in this project
 # - include: "*.dashboard.lookml"  # include all dashboards in this project
 include: "*.view"

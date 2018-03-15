@@ -1,6 +1,6 @@
 view: page_aliases_mapping {
   derived_table: {
-    sql_trigger_value: select count(*) from website.tracks ;;
+    sql_trigger_value: select count(*) from app_production.tracks ;;
     sql: with
       -- Establish all child-to-parent edges from tables (tracks, pages, aliases)
       all_mappings as (
@@ -8,7 +8,7 @@ view: page_aliases_mapping {
           anonymous_id
           ,user_id
           ,received_at as received_at
-        from website.tracks
+        from app_production.tracks
 
         union distinct
 
@@ -16,7 +16,7 @@ view: page_aliases_mapping {
           user_id
           ,null
           ,received_at
-        from website.tracks
+        from app_production.tracks
 
         union distinct
 
@@ -24,7 +24,7 @@ view: page_aliases_mapping {
           anonymous_id
           ,user_id
           ,received_at
-        from website.pages
+        from app_production.pages
 
         union distinct
 
@@ -32,7 +32,7 @@ view: page_aliases_mapping {
           user_id
           ,null
           ,received_at
-        from website.pages
+        from app_production.pages
       )
       select * from (
       select
