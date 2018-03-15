@@ -23,7 +23,7 @@ and a.session_id = d.session_id
 left join ${track_facts.SQL_TABLE_NAME} e
 on a.track_sequence_number + 4 = e.track_sequence_number
 and a.session_id = e.session_id
-order by a.session_id, a.track_sequence_number
+--order by a.session_id, a.track_sequence_number
  ;;
     sql_trigger_value: select count(*) from ${sessions_trk.SQL_TABLE_NAME} ;;
   }
