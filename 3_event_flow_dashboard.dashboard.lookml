@@ -9,7 +9,7 @@
   - name: date
     title: "Date"
     type: date_filter
-    default_value: 2017
+    default_value: 2018
 
   - name: event
     title: 'First Event'
@@ -307,4 +307,3 @@
     show_view_names: false
     show_row_numbers: true
     truncate_column_names: false
-

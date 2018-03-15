@@ -9,7 +9,7 @@
   - name: date
     title: "Date"
     type: date_filter
-    default_value: 'after 2016/01/01'
+    default_value: 'after 2018/01/01'
 
   elements:
 
