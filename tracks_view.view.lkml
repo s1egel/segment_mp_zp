@@ -1,5 +1,5 @@
 view: tracks_view {
-  sql_table_name: app_production.tracks_view ;;
+  sql_table_name: marketing_production.tracks_view ;;
 
   dimension: id {
     primary_key: yes

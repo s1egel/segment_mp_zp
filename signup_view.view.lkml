@@ -1,5 +1,5 @@
 view: signup_view {
-  sql_table_name: app_production.signup_view ;;
+  sql_table_name: marketing_production.signup_view ;;
 
   dimension: id {
     primary_key: yes

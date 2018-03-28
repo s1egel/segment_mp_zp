@@ -1,5 +1,5 @@
 view: users {
-  sql_table_name: app_production.users ;;
+  sql_table_name: marketing_production.users ;;
 
   dimension: id {
     primary_key: yes

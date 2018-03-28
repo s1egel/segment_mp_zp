@@ -1,5 +1,5 @@
 view: pages_view {
-  sql_table_name: app_production.pages_view ;;
+  sql_table_name: marketing_production.pages_view ;;
 
   dimension: id {
     primary_key: yes
